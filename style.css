@@ -1,0 +1,166 @@
+/* --- Styling Dasar (Reset & Font) --- */
+body {
+    font-family: 'Arial', sans-serif; /* Font yang bersih */
+    background-color: #f4f7f6; /* Latar belakang abu-abu muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Memastikan kartu berada di tengah halaman */
+    margin: 0;
+}
+
+/* --- Card Utama (Profile Card) --- */
+.profile-card {
+    background-color: #ffffff; /* Latar belakang kartu putih */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    padding: 30px;
+    width: 90%;
+    max-width: 600px; /* Batas lebar kartu */
+    text-align: center;
+    transition: transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+/* Efek kecil saat kursor di atas kartu */
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Bagian Header --- */
+.profile-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0; /* Garis pemisah */
+}
+
+.nama {
+    font-size: 2.2em;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.prodi {
+    font-size: 1.1em;
+    color: #007bff; /* Warna biru untuk fokus */
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* --- Bagian Foto dan Bio --- */
+.photo-section {
+    margin: 25px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    object-fit: cover;
+    border: 5px solid #007bff; /* Bingkai biru yang menarik */
+    box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.2); /* Efek cincin luar */
+    transition: border-color 0.3s;
+}
+
+/* --- Bagian Teks dan List --- */
+.bio-section p {
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.hobi-section h2 {
+    font-size: 1.4em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.hobi-section ul {
+    list-style: none; /* Menghilangkan bullet default */
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hobi-section li {
+    background-color: #e9ecef; /* Warna latar belakang hobi */
+    color: #495057;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bentuk pil */
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.hobi-section li:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* --- Bagian Media Sosial --- */
+.sosmed-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #ddd; /* Garis putus-putus */
+}
+
+.sosmed-section p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.sosmed-links {
+    display: flex;
+    flex-direction: column; /* Tautan ke bawah */
+    gap: 10px;
+    align-items: center;
+}
+
+.sosmed-link {
+    text-decoration: none;
+    color: #2a7cbb; /* Warna biru Instagram/Sosmed */
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 1px solid #2a7cbb;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    width: fit-content;
+}
+
+.sosmed-link:hover {
+    background-color: #2a7cbb;
+    color: white;
+    box-shadow: 0 4px 10px rgba(42, 124, 187, 0.3);
+}
+
+/* --- Media Queries (Responsif) --- */
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .nama {
+        font-size: 1.8em;
+    }
+
+    .prodi {
+        font-size: 1em;
+    }
+    
+    .hobi-section ul {
+        flex-direction: column; /* Hobi menjadi satu kolom di HP */
+        align-items: center;
+    }
+    
+    .hobi-section li {
+        width: 80%; /* Lebar hobi penuh */
+    }
+}
