@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+    <link rel="stylesheet" href="prak4.css">
+</head>
+
+<body>
+    <div class="header-nav">
+        <h1>M Ryan Grandis</h1>
+        <nav>
+            <a href="#Home-Page">Home Page</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#kontak">Contact</a>
+        </nav>
+    </div>
+
+    <div class="main-layout">
+        
+        <aside class="sidebar">
+            <section class="info-pribadi">
+                <h2>ABOUT ME</h2>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <span class="detail">email:<a href="mailto:ryangrandis">ryangrandis</a></span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🔗</span>
+                    <span class="detail">linkedin:<a href="#">M Ryan Grandis</a></span>
+                </div>
+
+                <section class="game-favorite">
+                    <h3>Game favorite</h3>
+                    <ul>
+                        <li>Mobile legend</li>
+                        <li>Resident Evil 4 Remake</li>
+                        <li>Genshin Impact</li>
+                        <li>Valorant</li>
+                    </ul>
+                </section>
+            </section>
+        </aside>
+
+        <main class="content">
+            <section id="Home-Page" class="section-card">
+                <h2>ABOUT ME</h2>
+                <div class="about-me-detail">
+                    <img src="ryn.png.jpg" alt="foto profile" class="profile-image">
+                    <p>i love turu</p>
+                </div>
+
+                <h3>Teknologi yang Dikuasai</h3>
+                <div class="skills-container">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">MySQL</span>
+                </div>
+            </section>
+            
+            <section id="projects-section" class="section-card">
+                <h2>projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Aplikasi keuangan untuk mahasiswa</h3>
+                        <p>membuat aplikasi sederhana untuk mahasiswa yang kesusahan untuk menghemat uang</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Aplikasi E-commerce</h3>
+                        <p>Membuat aplikasi untuk e-commerce</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Nusa Mobile</h3>
+                        <p>Aplikasi kesehatan dari tugas matkul AKSI</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Website Portfolio</h3>
+                        <p>Membuat website portfolio pribadi untuk menampilkan proyek dan keterampilan saya.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontak" class="section-card">
+                <h2>Kontak</h2>
+                <div class="contact-container">
+
+                    <div class="contact-info">
+                        <p>Silakan hubungi saya melalui formulir di samping atau melalui informasi kontak di bawah ini:</p>
+
+                        <div class="info-item-contact">
+                            <span class="icon-contact">📧</span>
+                            <span class="detail-contact">Email:<br><a
+                                    href="mailto:ryangrandis06@gmail.com">ryangrandis</a></span>
+                        </div>
+
+                        <div class="info-item-contact">
+                            <span class="icon-contact">🔗</span>
+                            <span class="detail-contact">LinkedIn:<br><a href="#">ryangrandis</a></span>
+                        </div>
+
+                        <div class="info-item-contact">
+                            <span class="icon-contact">🐙</span>
+                            <span class="detail-contact">GitHub:<br><a href="#">ryangrandis</a></span>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" name="subjek">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 M Ryan Grandis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
